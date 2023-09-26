@@ -74,6 +74,7 @@ public class Client extends Thread implements ITchat {
                 user_interface.appendMessage("Création du compte...\n");
                 test_connexion =  true;
             }
+            user_interface.emptyPassword();
 
         } 
         catch (SQLException e) {
@@ -165,6 +166,8 @@ public class Client extends Thread implements ITchat {
                         //
                     }
                 }
+
+                user_interface.setDisconnectedState();                      // Remet l'interface utilisateur dans l'état déconnecté
             }
         }
     }
