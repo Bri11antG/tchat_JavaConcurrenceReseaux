@@ -130,6 +130,15 @@ public class ClientUI extends Application implements EventHandler {
     }
 
     /**
+     * Vide la zone d'entrée de mdp
+     *
+     * @param message
+     */
+    public void emptyPassword() {
+        password.setText("");
+    }
+
+    /**
      * Connexion au serveur
      */
     public void connectToServer() {
